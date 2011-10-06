@@ -17,5 +17,5 @@ end
 Options =
 {
 	timecheat={name="Infinite Time",values={"Off","On"},runfunc=timecheatfunc},
-	infiniteturbo={name="Infinite Turbo",values={"Off","On"},runfunc=infiniteturbo_f},
+	infiniteturbo={name="Infinite Turbo",values={"Off","On"},runfunc=infiniteturbo_f}
 }
