@@ -1,4 +1,4 @@
-require("model2");	-- Import model2 machine globals
+require("model2");
 function Init()
 end
 function Frame()
@@ -11,7 +11,11 @@ end
 function timecheatfunc(value)
 	I960_WriteWord(RAMBASE+0x17BD0,99*60); -- 99 seconds always
 end
+function infiniteturbo_f(value)
+	I960_WriteWord(RAMBASE+0x7BEFE,16256); -- full turbo
+end
 Options =
 {
-	timecheat={name="Infinite Time",values={"Off","On"},runfunc=timecheatfunc}
+	timecheat={name="Infinite Time",values={"Off","On"},runfunc=timecheatfunc},
+	infiniteturbo={name="Infinite Turbo",values={"Off","On"},runfunc=infiniteturbo_f},
 }

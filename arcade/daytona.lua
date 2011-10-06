@@ -20,6 +20,6 @@ end
 Options =
 {
 	timecheat={name="Infinite Time",values={"Off","On"},runfunc=timecheatfunc},
-	firstplace={name="First Place",values={"Off","On"},runfunc=firstplacefunc},
+	firstplace={name="1st Place",values={"Off","On"},runfunc=firstplacefunc},
 	onelap={name="1 Lap",values={"Off","On"},runfunc=onelapfunc}
 }
