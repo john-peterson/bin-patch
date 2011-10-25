@@ -20,9 +20,13 @@ end
 function onelapfunc(value)
 	I960_WriteWord(RAMBASE+0x10EC,1); -- 1 lap
 end
+function heliviewfunc(value)
+	I960_WriteWord(RAMBASE+0x1710,4); -- helicopter view
+end
 Options =
 {
 	timecheat={name="Infinite Time",values={"Off","On"},runfunc=timecheatfunc},
 	firstplace={name="1st Place",values={"Off","On"},runfunc=firstplacefunc},
-	onelap={name="1 Lap",values={"Off","On"},runfunc=onelapfunc}
+	onelap={name="1 Lap",values={"Off","On"},runfunc=onelapfunc},
+	heliview={name="Helicopter View",values={"Off","On"},runfunc=heliviewfunc}
 }
