@@ -12,7 +12,7 @@ function timecheatfunc(value)
 	I960_WriteWord(RAMBASE+0x10F78,99*60); -- 99 seconds always
 end
 function firstplacefunc(value)
-	I960_WriteWord(RAMBASE+0x15A34,0); -- competitors in front
+	I960_WriteWord(RAMBASE+0x10F7C,0); -- competitors in front
 end
 function onelapfunc(value)
 	I960_WriteWord(RAMBASE+0x10F6C,1); -- 1 lap
