@@ -15,9 +15,13 @@ function freezetimefunc(value)
 	I960_WriteWord(RAMBASE+0x1204E,1*60); -- freeze time
 	I960_WriteWord(RAMBASE+0x12046,1*60); -- screen display
 end
+function firstplacefunc(value)
+	I960_WriteWord(RAMBASE+0x12094,1); -- position
+	I960_WriteWord(RAMBASE+0x1205C,1); -- position to show ending	
+end
 Options =
 {
 	timecheat={name="Infinite Time Left",values={"Off","On"},runfunc=timecheatfunc},
-	freezetime={name="Freeze Lap Time",values={"Off","On"},runfunc=freezetimefunc}
-end
+	freezetime={name="Freeze Lap Time",values={"Off","On"},runfunc=freezetimefunc},
+	firstplace={name="1st Place",values={"Off","On"},runfunc=firstplacefunc}
 }
