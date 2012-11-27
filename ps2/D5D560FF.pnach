@@ -1,0 +1,14 @@
+comment=Time Crisis 2 NTSC (D5D560FF) cheats
+// guncon1 calibration zero
+patch=1,EE,003AD4C9,word,0
+patch=1,EE,003AD4CD,word,0
+patch=1,EE,003AD4D1,word,8D000000
+patch=1,EE,003AD4F1,word,0
+patch=1,EE,003AD4F5,word,0
+patch=1,EE,003AD4F9,word,8D000000
+// Health
+patch=1,EE,00643958,word,a
+// 1P Handgun Ammo
+patch=1,EE,00643ABC,word,9
+// 2P Handgun Ammo
+patch=1,EE,00643AEC,word,9

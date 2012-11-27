@@ -1,0 +1,19 @@
+comment=Time Crisis 3 NTSC (7290669C) cheats
+// guncon2 1p y zero
+patch=1,EE,017E5564,word,0
+// guncon2 2p y zero
+patch=1,EE,017E5584,word,0
+// Health
+patch=1,EE,019A669C,word,a
+// Handgun Ammo
+patch=1,EE,019A67E4,word,32
+// Machinegun Ammo
+patch=1,EE,019A67E8,word,32
+// Shotgun Ammo
+patch=1,EE,019A67EC,word,32
+// Grenade Ammo
+patch=1,EE,019A67F0,word,32
+// Sniper Ammo
+patch=1,EE,019A67F4,word,32
+// Time
+//patch=1,EE,019A6674,word,1388
